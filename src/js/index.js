@@ -1,7 +1,7 @@
 import '../scss/index.scss'
 import 'bootstrap'
 
-$.getJSON('http://jsonplaceholder.typicode.com/users', function(data) {
+$.getJSON('https://jsonplaceholder.typicode.com/users', function(data) {
     var arr = []; 
     // Генерация двух рандомных id
     var rnd1 = Math.floor( Math.random() * (11));
