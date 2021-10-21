@@ -1,0 +1,74 @@
+$legacy_browser_support: false !default;
+
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  		-ms-text-size-adjust: 100%;  
+  @if $legacy_browser_support {
+    *font-size: 100%; 
+  }
+}
+
+html, body { 
+	margin: 0; 
+	padding: 0;
+}
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+a { background-color: transparent; }
+
+a {
+  &:active, &:hover {
+    outline: 0;
+  };
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	list-style-image: none;
+}
+
+img {
+  border: 0;
+  width: 100%;
+  @if $legacy_browser_support {
+    *-ms-interpolation-mode: bicubic; 
+  }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+*:focus {
+  outline: none;
+}

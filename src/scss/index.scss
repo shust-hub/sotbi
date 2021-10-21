@@ -1,0 +1,63 @@
+@import "normalize";
+@import "bootstrap";
+
+.wrapper{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 320px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25vh;
+    height: 25vh;
+
+    min-width: 250px;
+    min-height: 250px;
+
+    -webkit-box-shadow: 0px 10px 52px -27px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 52px -27px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 52px -27px rgba(0,0,0,0.75);
+    
+
+    // height: 300px;
+    .yellow{
+        flex-basis: 100%;
+        background: linear-gradient(107deg, rgba(253,225,12,1) 0%, rgba(255,174,0,1) 100%);        border-radius: 20px 20px 0 0;
+    }
+    .white{
+        flex-basis: 50%;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,234,216,1) 100%);
+        border-radius: 0 0 0 25px;
+        
+    }
+    .black{
+        flex-basis: 50%;
+        background: linear-gradient(180deg, rgba(36,35,33,1) 0%, rgba(51,49,42,1) 100%);
+        border-radius: 0 0 25px 0;
+    }
+}
+
+.underline{
+    span {
+        background: 
+            linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+            linear-gradient(to right, rgba(244, 67, 54, 1), rgba(244, 67, 54, 1), rgba(244, 67, 54, 1));
+        background-size: 100% 0.1em, 0 0.1em;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 430ms;
+    }
+    span:hover,
+    span:focus {
+        background-size: 0 0.1em, 100% 0.1em;
+    }
+}
+
+.users{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
